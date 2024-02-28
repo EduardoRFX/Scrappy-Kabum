@@ -18,7 +18,7 @@ def navegador_config():
     return navegador
 
 def excel_config():
-    caminho = 'C:/Users/Eduardo/Desktop/Python/projetos_bots/excel/scrappy.xlsx'
+    caminho = '<your.path.example>'
     planilha = xlsxwriter.Workbook(filename=caminho)
 
     return planilha
@@ -87,7 +87,7 @@ class Scrappy():
         sheet.write_column('B2', self.valores_cadeiras)
 
         planilha.close()
-        os.startfile('C:/Users/Eduardo/Desktop/Python/projetos_bots/excel/scrappy.xlsx')
+        os.startfile('<path.example>')
 
 scrappy = Scrappy()
 scrappy.iniciar()
